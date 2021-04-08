@@ -8,22 +8,16 @@ const mocks = {
   renderPaymentsResponse: require('../../__mock__/renderPaymentsResponse.json'),
 };
 
-describe('Render payment spec', () => {
-  let stubUser, stubBank;
-
+describe('Render payment spec using jest.fn', () => {
   beforeAll(() => {
-    stubUser = jest
-      .spyOn(userService, 'getUser')
-      .mockResolvedValue(mocks.getUserResponse);
-    stubBank = jest
-      .spyOn(bankService, 'getPayments')
-      .mockResolvedValue(mocks.getPaymentsResponse);
+    userService.getUser = jest.fn().mockResolvedValue(mocks.getUserResponse);
+    bankService.getPayments = jest.fn().mockResolvedValue(mocks.getPaymentsResponse);
   });
 
   test('should render payments from specific member successfully', async () => {
     const result = await paymentService.renderPayments('marcosrocha');
-    expect(stubUser).toHaveBeenCalledWith('marcosrocha');
-    expect(stubBank).toHaveBeenCalled();
+    expect(userService.getUser).toHaveBeenCalledWith('marcosrocha');
+    expect(bankService.getPayments).toHaveBeenCalled();
     expect(result).not.toBeUndefined();
     expect(result).toHaveLength(10);
     expect(result).toStrictEqual(mocks.renderPaymentsResponse);
@@ -31,15 +25,15 @@ describe('Render payment spec', () => {
 
   test.skip('should fail with toBe comparison payments from specific member successfully', async () => {
     const result = await paymentService.renderPayments('marcosrocha');
-    expect(stubUser).toHaveBeenCalledWith('marcosrocha');
-    expect(stubBank).toHaveBeenCalled();
+    expect(userService.getUser).toHaveBeenCalledWith('marcosrocha');
+    expect(bankService.getPayments).toHaveBeenCalled();
     expect(result).toBe(mocks.renderPaymentsResponse);
   });
   
   test('should return empty rendered payments due to user not found', async () => {
     const result = await paymentService.renderPayments('mariobrito');
-    expect(stubUser).toHaveBeenCalledWith('mariobrito');
-    expect(stubBank).toHaveBeenCalled();
+    expect(userService.getUser).toHaveBeenCalledWith('mariobrito');
+    expect(bankService.getPayments).toHaveBeenCalled();
     expect(result).toHaveLength(0);
     expect(result).toStrictEqual([]);
   });
@@ -47,10 +41,5 @@ describe('Render payment spec', () => {
     expect(paymentService.renderPayments()).rejects.toThrow(
       /Missing username argument/,
     );
-  });
-
-  afterAll(() => {
-    stubUser.mockRestore();
-    stubBank.mockRestore();
   });
 });
