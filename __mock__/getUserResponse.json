@@ -1,0 +1,13 @@
+{
+  "id": "bff126b2-fe4a-4374-8a6a-d2227d4bb54f",
+  "username": "marcosrocha",
+  "name": "Marcos Rocha",
+  "age": 25,
+  "payment": {
+    "card": {
+      "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+      "type": "credit",
+      "lastDigits": 1452
+    }
+  }
+}

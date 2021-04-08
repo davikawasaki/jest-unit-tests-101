@@ -1,0 +1,242 @@
+[
+  {
+    "id": "1",
+    "createdAt": "2021-04-06T16:17:05.985Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "344.83",
+    "currency": "BRL",
+    "type": "invoice",
+    "account": "60152461",
+    "localName": "Kovacek and Sons",
+    "localType": "Kids",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "3",
+    "createdAt": "2021-04-06T15:35:19.179Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "130.17",
+    "currency": "BRL",
+    "type": "invoice",
+    "account": "97432526",
+    "localName": "Tromp Inc",
+    "localType": "Industrial",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "4",
+    "createdAt": "2021-04-06T22:03:17.154Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "865.71",
+    "currency": "BRL",
+    "type": "deposit",
+    "account": "96110092",
+    "localName": "Zboncak Inc",
+    "localType": "Movies",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "5",
+    "createdAt": "2021-04-06T04:18:51.232Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "792.29",
+    "currency": "BRL",
+    "type": "payment",
+    "account": "47388199",
+    "localName": "Lindgren - Bruen",
+    "localType": "Health",
+    "city": "Sao Paulo",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "6",
+    "createdAt": "2021-04-06T10:43:16.433Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "207.55",
+    "currency": "BRL",
+    "type": "invoice",
+    "account": "83548587",
+    "localName": "Moore, Lowe and Tromp",
+    "localType": "Electronics",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "7",
+    "createdAt": "2021-04-06T10:01:28.812Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "525.36",
+    "currency": "BRL",
+    "type": "deposit",
+    "account": "24081350",
+    "localName": "Zemlak, Bogan and Rodriguez",
+    "localType": "Outdoors",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "8",
+    "createdAt": "2021-04-06T04:19:45.872Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "200.60",
+    "currency": "BRL",
+    "type": "withdrawal",
+    "account": "14301981",
+    "localName": "Crooks - Mosciski",
+    "localType": "Garden",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "9",
+    "createdAt": "2021-04-07T03:01:22.596Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "76.19",
+    "currency": "BRL",
+    "type": "deposit",
+    "account": "16793778",
+    "localName": "Wisoky - Adams",
+    "localType": "Jewelery",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "10",
+    "createdAt": "2021-04-06T09:00:37.033Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "232.99",
+    "currency": "BRL",
+    "type": "invoice",
+    "account": "40141191",
+    "localName": "Ritchie Inc",
+    "localType": "Home",
+    "city": "Sao Paulo",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  },
+  {
+    "id": "12",
+    "createdAt": "2021-04-06T10:29:41.919Z",
+    "user": {
+      "username": "marcosrocha",
+      "name": "Marcos Rocha",
+      "age": 25,
+      "payment": {
+        "card": {
+          "id": "9f0c962f-913c-4a5d-9c80-d5738c569588",
+          "type": "credit",
+          "lastDigits": 1452
+        }
+      }
+    },
+    "amount": "478.75",
+    "currency": "BRL",
+    "type": "deposit",
+    "account": "52467361",
+    "localName": "Cole and Sons",
+    "localType": "Automotive",
+    "city": "Londrina",
+    "cardId": "9f0c962f-913c-4a5d-9c80-d5738c569588"
+  }
+]
