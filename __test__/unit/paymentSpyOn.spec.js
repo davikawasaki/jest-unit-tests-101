@@ -1,6 +1,7 @@
 const { paymentService } = require('../../src/services');
 const userService = require('../../src/services/userService');
 const bankService = require('../../src/services/bankService');
+const axios = require('axios');
 
 const mocks = {
   getPaymentsResponse: require('../../__mock__/getPaymentsResponse.json'),
@@ -43,11 +44,24 @@ describe('Render payment spec using spyOn', () => {
     expect(result).toHaveLength(0);
     expect(result).toStrictEqual([]);
   });
+
   test('should fail rendering payments due to username not passed', async () => {
     expect(paymentService.renderPayments()).rejects.toThrow(
       /Missing username argument/,
     );
   });
+
+  test('should fail rendering payments when API is unavailable', async () => {
+    stubBank.mockRestore();
+    const axiosStub = jest
+      .spyOn(axios, 'get')
+      .mockRejectedValue(new Error('getaddrinfo ENOTFOUND'));
+
+    expect(paymentService.renderPayments('marcosrocha')).rejects.toThrow('getaddrinfo ENOTFOUND');
+    expect(stubUser).toHaveBeenCalledWith('mariobrito');
+
+    axiosStub.mockRestore();
+  })
 
   afterAll(() => {
     stubUser.mockRestore();
